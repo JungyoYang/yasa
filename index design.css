@@ -1,0 +1,65 @@
+body{
+    background-color: #595756;
+    margin: 0;
+}
+
+#about {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -300px;
+    margin-top: -460px
+}
+
+/* li에서 블록을 지정하기위한것. */
+
+#about a {
+    display: block;
+    text-decoration: none;
+    width: 300px;
+    height: 300px;
+}
+
+ul {
+    padding-left: 0;
+    margin: 0;
+}
+
+li {
+    float: left;
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    /* margin-bottom: 2%; */
+    color: #fff;
+    font-size: 3em;
+    text-align: center;
+    list-style: none;
+  }
+
+
+#first {
+    background-color: #FFEE24
+}
+
+#second {
+    background-color: #ED4B3B;
+}
+#third {
+    clear: both;
+    background-color: #25201A
+}
+
+#fourth {
+    background-image: url(https://blog.kakaocdn.net/dn/bMo2vC/btquUAY4Q5S/O6levk9vvaCMH5vRFMGQEK/img.jpg) ;
+}
+
+#fifth{
+    clear: both;
+    background-color: #EEECE6
+}
+
+#sixth{
+    background-color: #00B0E2
+}
+
