@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+.pic {
+    width: 900px;
+    height: auto;
+}
+
+.pic2 {
+    width: 450px;
+    height: auto;
+}
+
+body {
+    text-align: center;
+    line-height: 1.6;
+    font-family: 'Noto Sans KR', sans-serif;
+}
