@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yasa Asked</title>
+  <style>
+    form {display: flex; flex-direction: column; width: 50vw; }
+    form input[type='text'], form textarea {width: 100%; display: block; padding: 10px; border: 1px solid rgba(128, 128, 128, 0.502); border-radius: 5px; margin: 5px 0; box-sizing: border-box;}
+    form button {width: 100%; display: block; padding: 5px; border: 2px solid grey; background: rgba(128, 128, 128, 0.192); border-radius: 5px;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ASKED</h1>
+  </header>
+  <section>
+    <h2><span>사블</span>님에게 익명질문을 남겨보세요.</h2>
+    <form action="/complete.html" method="get">
+      <div>
+        <label for="private">익명글</label>
+        <input type="checkbox" name="anonymous" id="private">
+      </div>
+      <input type="text" name="name" placeholder="이름">
+      <textarea name="content" cols="30" rows="10" placeholder="마음껏 질문해보세요!" required></textarea>
+      <button type="submit">등록</button>
+    </form>
+  </section>
+</body>
+</html>

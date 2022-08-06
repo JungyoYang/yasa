@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>전송완료</title>
+</head>
+<body>
+  <h1>받은 메시지</h1>
+  <div>
+    익명글 여부 : <span class="a"></span>
+  </div>
+  <div>
+    작성자 이름 : <span class="b"></span>
+  </div>
+  <div>
+    작성글 : <span class="c"></span>
+  </div>
+  <script>
+    const getParams = new URL(location.href).searchParams;
+    const data = {
+      status : getParams.get('anonymous'),
+      name : getParams.get('name'),
+      content : getParams.get('content'),
+    }
+    document.querySelector(".a").innerHTML = data.status;
+    document.querySelector(".b").innerHTML = data.name ? data.name : '익명입니다.';
+    document.querySelector(".c").innerHTML = data.content;
+  </script>
+</body>
+</html>
